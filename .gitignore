@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+###
+
+# Folder for service account jsons
+service_accounts
+
+# Notes
+notes.txt

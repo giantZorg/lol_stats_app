@@ -1,0 +1,16 @@
+{
+    "python.pythonPath": ".venv\\Scripts\\python.exe",
+    "python.linting.pylintArgs": [
+        "--max-line-length=120",
+        "--disable=W0142,R0914,C0304,F0401,W0402,E1101,W0703,C0325,C0412,C0103"
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./Unittests",
+        "-p",
+        "test_*.py"
+    ]
+}
