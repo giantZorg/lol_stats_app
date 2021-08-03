@@ -6,7 +6,7 @@ This file explains the necessary services and how they are configured. During th
 Frequently used constants:
 ```
 export PROJECT_NAME=lol-stats-app
-export SYSTEM=test
+export DEPLOYMENT-ENV=test
 export REGION=europe-west1
 export ZONE=europe-west1-b
 export NETWORK=lol-stats-app
@@ -18,12 +18,12 @@ This service is used as a cache for quick access for both backend functions as w
 
 The gcloud command is as follows:
 ```
-gcloud redis instances create "${PROJECT_NAME}-${SYSTEM}" --size=1 \
+gcloud redis instances create "${PROJECT_NAME}-${DEPLOYMENT-ENV}" --size=1 \
     --region=${REGION} --zone=${ZONE} --redis-version=redis_5_0 \
     --network=${NETWORK}
 ```
 
 Retrieve the IP-address of the created Redis server (listed under *host*):
 ```
-gcloud redis instances describe "${PROJECT_NAME}-${SYSTEM}" --region=${REGION}
+gcloud redis instances describe "${PROJECT_NAME}-${DEPLOYMENT-ENV}" --region=${REGION}
 ```

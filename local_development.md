@@ -9,7 +9,6 @@ All local environment variables are stored in the file .env which is covered by 
 
 |ENV-Variable|Value|Meaning|
 |###|###|###|
-|DEV_LOCALE|1|Signals that development is done on a local machine|
 |GOOGLE_APPLICATION_CREDENTIALS|~|Path to the GCP service account credentials json used for local testing|
 |REDIS_HOST|localhost|IP for the redis server|
 
