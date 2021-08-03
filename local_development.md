@@ -11,3 +11,8 @@ All local environment variables are stored in the file .env which is covered by 
 |###|###|###|
 |DEV_LOCALE|1|Signals that development is done on a local machine|
 |GOOGLE_APPLICATION_CREDENTIALS|~|Path to the GCP service account credentials json used for local testing|
+|REDIS_HOST|localhost|IP for the redis server|
+
+
+## Local redis server
+For Windows machines, a local redis instance can be installed from [memurai](https://www.memurai.com/). The redis host is not an IP as on the GCP but *localhost*.
